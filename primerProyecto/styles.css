@@ -45,3 +45,10 @@ body {
   font-size: 12px; 
   text-align: center;
 }
+
+.form-label-tittle {
+  margin: auto;
+  color:black;
+  font-size: 14px; 
+  text-align: center;
+}
