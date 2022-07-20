@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculando por edades</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+  <body class="text-center">
+    <main class="form-signin">
+    <!--
+    EJERCICIO:
+    1)  Ingresar: Nombre y Edad
+    2)  Informar:
+          Si es mayor de 17 años, es mayor de edad
+          Si tiene entre 13 a 17 años, es adolescente
+          Si Es menor a 13 años, es un niño
+    3)  Importante:
+          Se pueden crear las variables que sean necesarias.
+          Se debe usar un solo alert en todo el código.
+          En el mensaje debe escribirse el nombre.   
+    -->
+    <a href="https://www.coderhouse.com/"><img  style='width: 100px;'src="coder.jpg"></a><br><br>
+    
+    <div class="form-floating">
+      <input type="button" class="form-button"  onclick="calculandoEdades()" value='Calcular'><br><br>
+      <label class="form-label">Por favor complete todos los datos solicitados</label><br><br>
+    </div>
+
+     <script type="text/javascript">
+      function calculandoEdades(){
+
+        let nombreUsuario = prompt("Ingrese se nombre");
+        let edadUsuario = prompt("Ingrese su edad");
+        let texto = '';
+
+        if(nombreUsuario !="" && edadUsuario !=""){
+          if(edadUsuario>=18){
+             texto = 'tu eres mayor de edad y tienes';
+          }else{
+            if(edadUsuario>=13 && edadUsuario<=17){
+              texto = 'tu eres adolescente y tienes';
+            }
+            else{
+              texto = 'tu un niño/a y tienes';
+            }
+          }
+          alert('Hola '+nombreUsuario+', '+texto+' '+edadUsuario+ ' años');
+        }else {
+          alert ('Debe completar todos los datos');
+        }  
+      }
+
+    </script>
+    </main>
+</body>
+</html>
+
+ 
+ 

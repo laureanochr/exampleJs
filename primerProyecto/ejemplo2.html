@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculando IVA 21%</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <main class="form-signin">
+      <a href="https://www.coderhouse.com/"><img  style='width: 100px;'src="coder.jpg"></a>
+     <h4>Calculando IVA 21%</h4>
+     <div class="form-floating">
+      <label>Ingrese número uno </label><label style="color:red;font-size: 11px;">(*)</label>
+      <input class="form-control" type="text" name="valorUno" id="valorUno" placeholder="Ingrese número"><br><br>
+
+      <label>Ingrese número dos </label><label style="color:red;font-size: 11px;">(*)</label>
+      <input class="form-control" type="text" name="valorDos" id="valorDos" placeholder="Ingrese número"><br><br>
+      
+      <label>IVA 21%</label>
+      <input class="form-button" type="button" onclick="calculandoIva()" value='Calcular'><br><br>
+      <label class="form-label">(*) Debe completar los campos obligatorios</label><br><br>
+    </div> 
+
+  <script type="text/javascript">
+    function calculandoIva(){
+      let numeroUno = document.getElementById("valorUno").value;
+      let numeroDos = document.getElementById("valorDos").value;
+
+      if(numeroUno !="" & numeroDos !=""){
+        let sumaNumeros = parseInt(numeroUno) + parseInt(numeroDos);
+         alert("El valor de la suma es " + sumaNumeros);
+
+        let resultIva = (sumaNumeros*21)/100;
+         alert("El costo del iva 21 % es " + resultIva);
+
+        let resultadoFinal = sumaNumeros + resultIva;
+         alert("La suma de los 2 numeros "+sumaNumeros+" + el iva "+resultIva+" = " + resultadoFinal);
+
+      }else {
+        alert ('Debe completar los dos campos');
+      }  
+      location.reload();
+    }
+  </script>
+
+  </main>
+  </body>
+</html>

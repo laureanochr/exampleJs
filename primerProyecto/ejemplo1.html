@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculando Números</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+   <body class="text-center">
+    <main class="form-signin">
+    <a href="https://www.coderhouse.com/"><img  style='width: 100px;'src="coder.jpg"></a>
+    <h4></a>Operaciones Matemáticas</h4>
+    <div class="form-floating">
+      <label>Primer número</label><label style="color:red;font-size: 11px;"> (*)</label>
+      <input class="form-control" type="text" name="valorUno" id="valorUno" placeholder="Ingrese el primer número"><br><br>
+
+      <label>Segundo número</label><label style="color:red;font-size: 11px;"> (*)</label>
+      <input class="form-control" type="text" name="valorDos" id="valorDos" placeholder="Ingrese el segundo número"><br><br>
+
+      <label>Multiplicar </label><input class="form-control" type="text" name="multiplo" id="multiplo" placeholder="Ingrese el múltiplo"><br><br>
+      <label>Dividir </label><input class="form-control"type="text" name="divisor" id="divisor" placeholder="Ingrese el divisor"> <br><br>
+
+      <input type="button" class="form-button" onclick="calculos()" value='Calcular'><br><br>
+      <label class="form-label">(*) Debe completar los campos obligatorios</label><br><br>
+    </div>
+
+    <script type="text/javascript">
+      function calculos(){ 
+
+        let numeroUno = document.getElementById("valorUno").value;
+        let numeroDos = document.getElementById("valorDos").value;
+        let multiplo =  document.getElementById("multiplo").value;
+        let divisor = document.getElementById("divisor").value;
+
+        if(numeroUno !="" & numeroDos !=""){
+          let sumaNumeros = parseInt(numeroUno) + parseInt(numeroDos);
+          alert("El valor de la suma es " + sumaNumeros);
+
+          if(multiplo!=''){
+            let resultadoFinal = sumaNumeros * parseInt(multiplo);
+            alert("El resultado de la suma de los dos numeros, multiplicado por " + multiplo + " es " + resultadoFinal);
+          }
+
+          if(divisor!=''){
+            let resultadoFinal2 = sumaNumeros / parseInt(divisor);
+            alert("El resultado de la suma de los dos numeros es "+ sumaNumeros +", dividido por " + divisor + " es " + resultadoFinal2);
+          }
+
+        }else {
+          alert ('Debe ingresar dos números');
+
+        }
+        location.reload();
+      }
+    </script>
+
+    </main>
+  </body>
+</html>
