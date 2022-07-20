@@ -27,7 +27,7 @@
       let numeroUno = document.getElementById("valorUno").value;
       let numeroDos = document.getElementById("valorDos").value;
 
-      if(numeroUno !="" & numeroDos !=""){
+      if(numeroUno && numeroDos){
         let sumaNumeros = parseInt(numeroUno) + parseInt(numeroDos);
          alert("El valor de la suma es " + sumaNumeros);
 

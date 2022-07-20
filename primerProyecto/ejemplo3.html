@@ -35,7 +35,7 @@
         let edadUsuario = prompt("Ingrese su edad");
         let texto = '';
 
-        if(nombreUsuario !="" && edadUsuario !=""){
+        if(nombreUsuario && edadUsuario){
           if(edadUsuario>=18){
              texto = 'tu eres mayor de edad y tienes';
           }else{

@@ -32,16 +32,16 @@
         let multiplo =  document.getElementById("multiplo").value;
         let divisor = document.getElementById("divisor").value;
 
-        if(numeroUno !="" & numeroDos !=""){
+        if(numeroUno && numeroDos){
           let sumaNumeros = parseInt(numeroUno) + parseInt(numeroDos);
           alert("El valor de la suma es " + sumaNumeros);
 
-          if(multiplo!=''){
+          if(multiplo){
             let resultadoFinal = sumaNumeros * parseInt(multiplo);
             alert("El resultado de la suma de los dos numeros, multiplicado por " + multiplo + " es " + resultadoFinal);
           }
 
-          if(divisor!=''){
+          if(divisor){
             let resultadoFinal2 = sumaNumeros / parseInt(divisor);
             alert("El resultado de la suma de los dos numeros es "+ sumaNumeros +", dividido por " + divisor + " es " + resultadoFinal2);
           }
