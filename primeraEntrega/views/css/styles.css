@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #d4d4d4;
+}
+
+.form-signin {
+  margin: auto;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  color: black;
+  border: 1px;
+  text-align: center;
+}
+
+.form-button {
+  width: 100%;
+  height: 40px;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  border: 1px;
+  text-align: center;
+  background: #000000;
+}
+
+.form-label {
+  margin: auto;
+  color:red;
+  font-size: 12px; 
+  text-align: center;
+}
+
+.form-label-title {
+  margin: auto;
+  color:black;
+  font-size: 16px; 
+  text-align: center;
+}
+
+.form-label-subTitle {
+  margin: auto;
+  color:black;
+  font-size: 14px; 
+  text-align: center;
+}

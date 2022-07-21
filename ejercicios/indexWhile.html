@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Clase 03 Coder House</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+
+    
+
+    
+
+<!--link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!--Archivos de javascript externos al html-->
+  
+  <!--script src="js/main.js"></script-->
+
+  <script type="text/javascript">
+
+   function probarCodigo()
+    {
+      let nacionalidad=prompt("ingrese nacionalidad");
+      //este bucle/ciclo  puede que no se ejecute nunca,
+      //si el usuario ingresa "terminar" en la primera
+      while(nacionalidad!="terminar")
+      {
+        console.log("el usuario es " +nacionalidad);
+        //pido una nueva nacionalidad y doy la posibilidad
+        //de terminar el bucle
+        nacionalidad=prompt("ingrese otra nacionalidad");
+      }
+      
+
+      //a este bucle/ciclo se ingresa como minomo una vez
+      do{
+        let clave=prompt("ingrese la clave secreta")
+         
+      }while( clave!= "1234")
+      console.log("felicitaciones ingreso la clave correcta");
+    
+
+    }
+  
+   
+  </script>
+ 
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin w-100 m-auto">
+  <form>
+    <img class="mb-4" src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/339977/339977-1631534697795-31f11e299a096.jpg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">WHILE Ciclos/iteraciones JS</h1>
+
+   
+   <button type="button" onclick="probarCodigo()"  class="btn btn-primary">Testear codigo</button>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+  </form>
+</main>
+
+
+    
+  </body>
+ 
+
+</html>
