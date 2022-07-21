@@ -11,7 +11,7 @@ function calculandoTurno(){
 			}
 	    	alert ('Estimado '+nombreUsuario+', usted ha alcanzado el numero máximo de turnos ('+maxTurno+'), Muchas gracias.');
    	 	}else{
-   	 		alert ('Estimado '+nombreUsuario+', su numero máximo de turnos es de ('+maxTurno+').');
+   	 		alert ('Estimado '+nombreUsuario+', su numero máximo de turnos es de '+maxTurno+'. No tiene turnos disponibles.');
    	 	}
     }else{
     	alert ('Debe completar todos los datos, recuerde que el turno tiene que ser un numero entero');
